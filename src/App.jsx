@@ -17,7 +17,7 @@ function App() {
                   Get <span className="text-SoftViolet">insights</span> that
                   help your business grow.
                 </h1>
-                <p className="text-headingWhite text-base mt-10">
+                <p className="text-headingWhite text-base mt-6">
                   Discover the benefits of data analytics and make better
                   decisions regarding revenue, customer experience, and overall
                   efficiency.
