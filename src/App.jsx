@@ -4,11 +4,11 @@ import NumberData from "./component/NumberData";
 
 function App() {
   return (
-    <div className="bg-VeryDarkBlue h-screen  ">
+    <div className="bg-VeryDarkBlue h-screen flex justify-center items-center ">
       <div className="pt-20 ">
-        <div className="mx-auto  bg-DarkDesaturatedBlue sm:flex sm:w-[70%] w-[80%] rounded-md overflow-hidden ">
+        <div className="mx-auto  bg-DarkDesaturatedBlue sm:flex sm:max-w-[66%] sm:min-w-[66%] w-[80%] rounded-md overflow-hidden ">
           <div className="sm:hidden bg-SoftViolet">
-            <img src={mobileImg} className="z-[-10] " />
+            <img src={mobileImg} className="mix-blend-multiply opacity-75" />
           </div>
           <div className="sm:flex">
             <div className="px-8 sm:px-20 grid space-y-6  items-center sm:w-[50%] text-center sm:text-left">
@@ -22,7 +22,7 @@ function App() {
                 efficiency.
               </p>
               <div className="">
-                <div className="flex flex-col sm:flex-row justify-between text-center sm:text-left space-y-4 sm:space-y-0 p-4">
+                <div className="flex flex-col sm:flex-row justify-between text-center sm:text-left space-y-4 sm:space-y-0 py-4">
                   <NumberData number={"10k+"} about={"companies"} />
                   <NumberData number={"314"} about={"templates"} />
                   <NumberData number={"12M+"} about={"queries"} />
@@ -30,8 +30,11 @@ function App() {
               </div>
             </div>
 
-            <div className="hidden sm:block w-[50%] ">
-              <img src={desktopImg} />
+            <div className="hidden sm:block w-[50%] bg-SoftViolet">
+              <img
+                src={desktopImg}
+                className="h-[100%] mix-blend-multiply opacity-75"
+              />
             </div>
           </div>
         </div>
