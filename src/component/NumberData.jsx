@@ -6,7 +6,9 @@ export default function NumberData({ number, about }) {
       <h2 className="text-xl sm:text-2xl font-inter font-bold  text-White">
         {number}
       </h2>
-      <p className="text-headingWhite uppercase font-lexicadeca">{about}</p>
+      <p className="text-headingWhite uppercase sm:text-xs font-lexicadeca">
+        {about}
+      </p>
     </div>
   );
 }
